@@ -11,13 +11,14 @@ func _ready():
 
 func update_color():
 	if HUD.color_paddle:
-		pass
+		$Color.color = Color8(173,181,189)
 	else:
 		pass
 
 func emit_particle(pos):
 	if HUD.particle_paddle:
-		pass
+		$Particles2D.emitting = true
+		$Particles2D.global_position = pos
 	else:
 		pass
 
